@@ -97,6 +97,20 @@ Google 試算表的 ID 可以從回覆表單的網址列取得（黃色區塊）
 
 NOTE: **每當修改程式碼或是網頁內容時，都需要重新部署**
 
+
 ### 6. 在瀏覽器中測試
 
+以下是嘗試傳送五筆測試簽署資訊後的結果。
+
 ![](images/web-app-page.png)
+
+若您要修改文字，請修改 index.html。
+
+
+## 貢獻＆聯絡
+
+若您對此專案有任何想法、需求或錯誤回報，可隨時與我聯繫。亦歡迎任何開源社群的貢獻。
+
+## 授權
+
+本專案程式碼的部分依據 [MIT License](LICENSE) 授權方式開源；文件的部分可依據 [CC BY-SA 4.0 DEED](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hant) 分享。
