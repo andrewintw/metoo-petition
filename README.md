@@ -25,7 +25,7 @@
 
 這個網頁可以顯示連署聲明，並顯示當前的連署人數，同時依據不同身份列出連署者的名稱（參見下圖）。
 
-![](metoo-petition.png)
+![](images/metoo-petition.png)
 
 
 ## 建置步驟
