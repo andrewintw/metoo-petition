@@ -93,9 +93,9 @@ Google 試算表的 ID 可以從回覆表單的網址列取得（黃色區塊）
 
 然後會需要你驗證 Google 帳戶，輸入您的 email 密碼驗證並同意即可。部署完成後會取得一個網頁應用程式的網址，這個 URL 就是連署的入口網頁。
 
-![](images/web-app-url.png)
-
 NOTE: **每當修改程式碼或是網頁內容時，都需要重新部署**
+
+![](images/web-app-url.png)
 
 
 ### 6. 在瀏覽器中測試
@@ -104,7 +104,7 @@ NOTE: **每當修改程式碼或是網頁內容時，都需要重新部署**
 
 ![](images/web-app-page.png)
 
-若您要修改文字，請修改 index.html。
+若您要修改文字，請修改 index.html。此外，為了容易散佈連署資訊，你可能會想要使用 [Bitly](https://bitly.com/) 或 [TinyURL](https://tinyurl.com/) 這類的短址服務縮減連署的入口網頁的網址。
 
 
 ## 貢獻＆聯絡
