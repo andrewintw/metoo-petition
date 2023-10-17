@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      設計/文案/概念: 李紫彤 (Lee TzuTung) https://www.tzutung.com
+      工程實作: 林彥璋 (Andrew Lin) https://github.com/andrewintw
+    -->
+    <base target="_top">
+    <!--INCLUDE REQUIRED EXTERNAL JAVASCRIPT AND CSS LIBRARIES-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.23/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/dataTables.bootstrap4.min.css">
+ 
+    <?!= include('showData'); ?> <!--INCLUDE showData.html FILE-->
+    <style>
+      .counter {
+        font-size: 22px;
+        font-weight:600;
+      }
+
+      .datacolumn {
+        column-count: 3;
+      }
+
+      .signertype {
+        font-size: 22px;
+        font-weight:600;
+      }
+
+      .resultlist {
+        margin: 50px;
+      }
+    </style>
+  </head>
+ 
+  <body>
+    <div class="container">
+      <div class="text-center"><img src="https://i.imgur.com/09fks8G.png" class="img-fluid" width="400" height="400"></div>
+      <h1 class="text-center display-6">ＯＯＯ涉權勢性侵事件</h2>
+      <h1 class="text-center display-4">藝術文化工作者聯合聲明</h1>
+      <br>
+      <p>針對ＯＯＯ涉妨害性自主一事，作為藝術、文化工作者，我們在此共同聲明：</p>
+
+      <p><strong>一、性暴力不該被容忍，相關暴力、歧視、騷擾行為在任何族群、性別、職業身份間，都應受到最嚴厲之譴責。我們在此表達對受害者們的同理與支持。</strong></p>
+
+      <p><strong>二、承上，我們呼籲ＯＯＯ誠實面對事件，具體說明事實。相關人士避免再次譴責受害人、忽視性暴力相關之惡行，甚至成為共犯結構的一環。</strong></p>
+
+      <p><strong>三、在釐清ＯＯＯ是否應負起社會與法律責任前，我們拒絕一切與其有關之合作，期望藝文產業積極介入，藝文產業應創造平等環境，不應容許各式性別、權力上的暴力與壓迫。</strong>​</p>
+
+      <p>作為藝術文化工作者及群體公民，我們深刻理解健全的環境對相關從業人員的重要性。
+        我們必須一起為各個世代，創造更自在、安全的與交流環境，期待在此事件為整體環境帶來自省，並在此之後，不再有人為此受傷、犧牲。
+        作為藝文工作者，我們在此共同反對性侵及任何形式的性暴力。</p>
+    </div>
+
+    <div class="container">
+      <p>
+        <span class="counter"><?= getCosignerCount() ?></span>名連署人暨團體 (照姓名筆畫排列)
+        <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/YourFormID/viewform" 
+          role="button" target="_blank">參加連署</a>
+      </p>
+
+      <p class="signertype">藝文工作者</p>
+      <ol class="datacolumn" id="artworker"></ol>
+
+      <p class="signertype">學術與公民團體</p>
+      <ol class="datacolumn" id="civicgroups"></ol>
+
+      <p class="signertype">公民個人</p>
+      <ol class="datacolumn" id="citizen"></ol>
+      <br>
+    </div>  
+  </body>
+</html>
