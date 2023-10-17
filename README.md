@@ -74,7 +74,14 @@ Google 試算表的 ID 可以在回應表單的網址欄中找到（黃色框中
 
 ![](images/google-spreadsheet-id.png)
 
-然後，請將 [source/index.html](source/index.html) 的內容覆蓋您所建立的 index.html；[source/showData.html](source/showData.html) 的內容覆蓋您所建立的 showData.html
+然後，請將 [source/showData.html](source/showData.html) 的內容覆蓋您所建立的 showData.html；[source/index.html](source/index.html) 的內容覆蓋您所建立的 index.html。
+
+並且修改 index.html 中「參加連署」按鈕所指向的連結 — 將程式碼中 `https://docs.google.com/forms/d/e/YourFormID/viewform` 的連結替換為您 Google 連暑表單的連結。
+
+```html
+  <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/YourFormID/viewform" 
+     role="button" target="_blank">參加連署</a>
+```
 
 ![](images/google-app-script.png)
 
