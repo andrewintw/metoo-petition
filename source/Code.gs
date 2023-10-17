@@ -1,4 +1,4 @@
-var ss = SpreadsheetApp.openById('1cTtC3-fT8WoBR9yeWAcgPCYyM9N3IZTW7nG1DsHl1NM');
+var ss = SpreadsheetApp.openById('YOUR_Spreadsheet_ID');
 
 var sheet = ss.getSheets()[0]; // 表單回應 1
 
