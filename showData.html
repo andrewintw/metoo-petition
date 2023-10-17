@@ -1,0 +1,22 @@
+<script type="text/javascript">
+  /*
+   * THIS FUNCTION CALLS THE getData() FUNCTION IN THE Code.gs FILE, 
+   * AND PASS RETURNED DATA TO showData() FUNCTION
+   */
+  google.script.run.withSuccessHandler(showData).getData();
+ 
+  //THIS FUNCTION GENERATE THE DATA TABLE FROM THE DATA ARRAY
+  function showData(dataArray){
+    $(document).ready(function(){
+      for (var i=0; i<dataArray.length; i++) {
+        if (dataArray[i][1] === '藝文工作者') {
+          $('ol#artworker').append('<li>'+dataArray[i][0]+'</li>');
+        } else if (dataArray[i][1] === '公民個人') {
+          $('ol#citizen').append('<li>'+dataArray[i][0]+'</li>');
+        } else { // 學術與公民團體
+          $('ol#civicgroups').append('<li>'+dataArray[i][0]+'</li>');
+        }
+      }
+    });
+  }
+</script>
