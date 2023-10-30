@@ -139,6 +139,10 @@ Google 試算表的 ID 可以在回應表單的網址欄中找到（黃色框中
 
 如果您需要修改文字，請修改 index.html。此外，為了更容易分享您的連署入口網頁，您可能希望使用像 [Bitly](https://bitly.com/) 或 [TinyURL](https://tinyurl.com/) 這樣的短網址服務，將連署網頁的網址縮短。
 
+## 特別感謝
+
+設計/文案/概念: 李紫彤 (Lee TzuTung) https://www.tzutung.com
+
 
 ## 貢獻＆聯絡
 
