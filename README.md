@@ -1,5 +1,7 @@
 # metoo-petition
 
+* 網站設計/文案/概念: 李紫彤 (Lee TzuTung) https://www.tzutung.com
+
 ## 關於這個專案
 
 在進行公民連署行動時，有時會需要一個線上展示頁，顯示「目前的連署人數」以及「連署人的公民身份」。
@@ -138,10 +140,6 @@ Google 試算表的 ID 可以在回應表單的網址欄中找到（黃色框中
 ![](images/web-app-page.png)
 
 如果您需要修改文字，請修改 index.html。此外，為了更容易分享您的連署入口網頁，您可能希望使用像 [Bitly](https://bitly.com/) 或 [TinyURL](https://tinyurl.com/) 這樣的短網址服務，將連署網頁的網址縮短。
-
-## 特別感謝
-
-設計/文案/概念: 李紫彤 (Lee TzuTung) https://www.tzutung.com
 
 
 ## 貢獻＆聯絡
