@@ -1,12 +1,27 @@
 # metoo-petition
 
-快速建立一個簡單的 #MeToo 連署網頁，以 Google 表單為基礎。
+## 關於這個專案
+
+在進行公民連署行動時，經常需要一個展示頁面，以顯示「目前的連署人數」以及「連署人的公民身份」。
+
+一般而言，架設一個連署網站，需要有人開發前後端程式、處理網頁代管等事宜。除非有很強的技術背景知識，或是團隊中有這樣的幫手，否則很難在短時間將網站上線。
+
+metoo-petition 這個小作品是 2022 年為了台灣某個 #MeToo 事件而撰寫的（這也是為何專案名稱會有 "metoo" 的原因）。在此將程式碼整理並釋出為開源專案，並提供了圖文教學。實務上您可將它改成任何主題，僅需修改連署議題和相關的說明文字即可。
+
+**特性：**
+
+* 快速建立一個簡易的連署展示頁面（10 分鐘以內）
+* 以 Google 表單為基礎
+* 無須安裝任何軟體，僅需有 Google 帳戶即可建立
+* 無須具備任何後台開發建置經驗
+* 適用於緊急、短期、預估幾千人的連署行動
+
 
 ## 專案說明
 
-在進行公民連署行動時，經常需要一個展示頁面，以顯示當前的連署人數以及公民身份。metoo-petition 這個小專案是 2022 年為了台灣某個 #MeToo 事件而撰寫的。現在將其程式碼整理並釋出為開源專案，並提供了圖文教學。
+使用 metoo-petition，您只需要擁有一個 Google 帳戶，即可快速建立一個連署網站。它的運作方式如下：
 
-使用 metoo-petition，您只需要擁有一個 Google 帳戶，即可快速建立一個連署網站。它的運作方式如下：透過 Google App Script 建立一個簡易的 WebApp，它會讀取由連署表單連結的試算表，然後在網頁上顯示連署者的資料。
+透過 Google App Script 建立一個簡易的 WebApp，它會讀取由連署表單連結的試算表，然後在網頁上顯示連署者的資料。
 
 ```
     連署入口頁 (WebApp)                     連署表單
@@ -74,16 +89,19 @@ Google 試算表的 ID 可以在回應表單的網址欄中找到（黃色框中
 
 ![](images/google-spreadsheet-id.png)
 
-然後，請將 [source/showData.html](source/showData.html) 的內容覆蓋您所建立的 showData.html；[source/index.html](source/index.html) 的內容覆蓋您所建立的 index.html。
+![](images/google-app-script.png)
 
-並且修改 index.html 中「參加連署」按鈕所指向的連結 — 將程式碼中 `https://docs.google.com/forms/d/e/YourFormID/viewform` 的連結替換為您 Google 連暑表單的連結。
+然後，繼續新增兩個 HTML 檔案：
+
+* 將 [source/showData.html](source/showData.html) 的內容覆蓋您所建立的 showData.html
+* 將 [source/index.html](source/index.html) 的內容覆蓋您所建立的 index.html
+
+並且修改 index.html 中「參加連署」按鈕所指向的連結 — 將程式碼中 `https://docs.google.com/forms/d/e/YourFormID/viewform` 的連結替換為您 Google 連暑表單的連結。（href= 後面那段）
 
 ```html
   <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/YourFormID/viewform" 
      role="button" target="_blank">參加連署</a>
 ```
-
-![](images/google-app-script.png)
 
 ### 5. 部署網頁應用程式
 
@@ -115,9 +133,11 @@ Google 試算表的 ID 可以在回應表單的網址欄中找到（黃色框中
 
 ## 貢獻＆聯絡
 
+我並非專業的前後端開發者，這個小作品是我學習 Google App Script 時實作的，現在看起來依然有些缺點，像是無法避免建構者修改 HTML。
+
 若您對此專案有任何點子、需求或錯誤回報，請隨時與我聯繫。亦歡迎任何開源社群的貢獻。
 
-您可透過 [New issue](https://github.com/andrewintw/metoo-petition/issues) 功能開啟一個主題討論。
+您可透過 [New issue](https://github.com/andrewintw/metoo-petition/issues) 功能開啟一個主題討論。有任何使用上的問題，亦可在這裡詢問。
 
 ## 授權
 
