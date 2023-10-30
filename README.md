@@ -1,6 +1,6 @@
 # metoo-petition
 
-* 網頁 logo設計/概念: [李紫彤 (Lee TzuTung)](https://www.tzutung.com)
+* 網頁 logo設計/UX: [李紫彤 (Lee TzuTung)](https://www.tzutung.com)
 
 ## 關於這個專案
 
