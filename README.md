@@ -85,7 +85,7 @@ Google Apps Script（GAS）就是需要撰寫程式碼的部分，它的工作�
 
 預設情況下，Google App Script 會替你建立一個名為「程式碼.gs」的檔案，請用 [source/Code.gs](source/Code.gs) 的內容覆蓋它。
 
-覆蓋後，您唯一需要手動修改的是程式碼中的第一行，即 Google 試算表的 ID。如下所示，您需要將 'YOUR_Spreadsheet_ID' 替換為實際的試算表 ID。
+覆蓋後，您唯一需要手動修改的是程式碼中的第一行，即填上步驟二建立 Google 試算表的 ID。如下所示，您需要將 'YOUR_Spreadsheet_ID' 替換為實際的試算表 ID。
 
 ```javascript
 var ss = SpreadsheetApp.openById('YOUR_Spreadsheet_ID');
